@@ -26,7 +26,7 @@ to detect unauthorized modifications.
 📦 Installation:
 
 1. Clone the repository:
-     git clone https://github.com/your-username/PyFIM.git
+     git clone https://github.com/gostroot69/PyFIM.git
    
 2. cd PyFIM
 
