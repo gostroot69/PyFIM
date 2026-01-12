@@ -126,8 +126,7 @@ class Main:
             
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="FIM = File Integrity Monitor")
-
-    # Основні аргументи
+    
     parser.add_argument("-m", "--mode", choices=['hash_file', 'multi_hash', 'check_hash', 'multi_check'], 
                         help="Choose mode of operation", required=True)
     parser.add_argument("-f", "--file_path", help="Path to file (for hash_file or check_hash)")
@@ -135,7 +134,7 @@ if __name__ == "__main__":
     parser.add_argument("-json", "--json_path", help="Path to JSON datebase")
     parser.add_argument("-d", "--dir_path", help="Path to directory (for multi_hash or multi_check)")
     parser.add_argument("-n", "--name", help="Name key (file_name) for JSON")
-
+    
     args = parser.parse_args()
 
     app = Main(args.file_path, args.type)
